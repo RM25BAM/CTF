@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import Adventure from "../assets/adventure_time.mp4";
 // TODO: replace with your actual Adventure-Time-style SQL intro video.
 // import AdventureSqlIntro from "../assets/adventure-sql-intro.mp4";
@@ -41,7 +40,7 @@ const USERS: UserRecord[] = [
 ];
 
 const Level5: React.FC = () => {
-  const navigate = useNavigate();
+
 
   // intro stage
   const [introSeen, setIntroSeen] = useState<boolean>(() => {
